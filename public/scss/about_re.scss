@@ -1,0 +1,153 @@
+#container{
+    .center{
+        margin-top: 100px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        > div {
+            height: 100vh;
+            width:1300px;
+        }
+        .cont1{
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid rgb(224, 224, 224);
+            h1{
+                font-size: 25pt;
+                margin-bottom: 30px;
+                color:#3a3a3a;
+            }
+            p{
+                line-height: 35px;
+                color:#666666;
+                font-size: 11pt;
+            }
+            .cont1_textbox{
+                width: 360px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .right_imgbox{
+                margin-left: 50px;
+                img{
+                    width: 300px;
+                    height: 450px;
+                }
+                .img2{
+                    right: -30px;
+                    position: relative;
+                    bottom:-150px;
+                }
+            }
+        }
+        .cont2{
+            position: relative;
+            &::before{
+                height: 100%;
+                width: 1px;
+                content: "";
+                display: block;
+                background-color: rgb(224, 224, 224);
+                left: 40%;
+                position: absolute;
+            }
+            margin-left: 300px;
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-between;
+            height: 500px;
+            .cont2_textbox_left{
+                .contact{
+                    margin-bottom: 50px;
+                    p{
+                        line-height: 35px;
+                        color:#666666;
+                        font-size: 11pt;
+                    }
+                }
+                h1{
+                    font-family: 'Libre Baskerville', serif;
+                    font-size: 25pt;
+                    margin-bottom: 30px;
+                    color:#3a3a3a;
+                }
+                .shop{
+                    font-family: 'Libre Baskerville', serif;
+                    h2{
+                        margin: 20px 0;
+                        position: relative;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top:-8px;
+                            width: 10%;
+                            height: 1px;
+                            display: block;
+                            background-color: #666666;
+                        }
+                    }
+                    p{
+                        line-height: 35px;
+                        color:#666666;
+                        font-size: 11pt;
+                    }
+                }
+                .list{
+                    margin-top: 30px;
+                    h4{
+                        margin: 20px 0;
+                        position: relative;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top:-8px;
+                            width: 10%;
+                            height: 1px;
+                            display: block;
+                            background-color: #666666;
+                        }
+                    }
+                    p{
+                        line-height: 35px;
+                        color:#666666;
+                        font-size: 11pt;
+                        a{
+                            color:rgb(103, 152, 224);
+                            &:hover{
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+            .cont2_textbox_right{
+                width: 604px;
+                h1{
+                    font-family: 'Libre Baskerville', serif;
+                    font-size: 25pt;
+                    margin-bottom: 30px;
+                    color:#3a3a3a;
+                }
+                p{
+                    line-height: 35px;
+                    color:#666666;
+                    font-size: 11pt;
+                    
+                }
+                .textbox{
+                    margin-top: 30px;
+                    h2{
+                        margin: 10px 0;
+                    }
+                }
+                .textbox2{
+                    h2{
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}

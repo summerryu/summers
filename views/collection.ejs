@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Song+Myung&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/collection.css">
+    <link rel="stylesheet" href="/css/set.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header_design.css">
+</head>
+<body>
+    <%- include("header.ejs",{design:"design"}) %>
+    <div id="container">
+        <div class="center">
+            <div class="cont1">
+                <div class="cont1_left">
+                    <img src="/img/collection/coll1.png">
+                </div>
+                <div class="cont1_right">
+                    <img src="/img/collection/main_2.png">
+                    <img src="/img/collection/main_1.png">
+                    <div class="right_text">
+                        <h1>23 Collection Vol. 瑜花畵</h1>
+                        <p>아름다운 꽃의 그림</p>
+                        <p>Chapter. 瑜花畵 : a flower</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cont2_main_text">
+                <h1>Collection</h1>
+                <p>2023 복나비 한복의 Collection Chapter. 瑜花畵 : a flower 를 만나보세요.</p>
+            </div>
+            <div class="cont2_gender_btn">
+                <div class="gender on">
+                    <a href="#">woman</a>
+                </div>
+                <div class="gender">
+                    <a href="#">men</a>
+                </div>
+            </div>
+            <div class="cont2">
+                <div class="womanmain on">
+                    <div class="cont2_woman on">
+                        <div class="cont2_woman_main">
+                            <img src="/img/collection/coll10.png">
+                        </div>
+                        <div class="cont2_woman_sub">
+                            <% for (let i=0; i < 3; i++) { %>
+                                <div class="womans"></div>
+                            <% } %>
+                        </div>
+                    </div>
+                    <div class="cont2_woman">
+                        <div class="cont2_woman_main">
+                            <img src="/img/collection/coll18.png">
+                        </div>
+                        <div class="cont2_woman_sub">
+                            <% for (let i=0; i < 3; i++) { %>
+                                <div class="womans"></div>
+                            <% } %>
+                        </div>
+                    </div>
+                    <div class="cont2_woman">
+                        <div class="cont2_woman_main">
+                            <img src="/img/collection/coll4.png">
+                        </div>
+                        <div class="cont2_woman_sub">
+                            <% for (let i=0; i < 3; i++) { %>
+                                <div class="womans"></div>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+                <div class="menmain">
+                    <div class="cont2_men on">
+                        <div class="cont2_men_main">
+                            <img src="/img/collection/coll_man1.png">
+                        </div>
+                        <div class="cont2_men_sub">
+                            <% for (let i=0; i < 3; i++) { %>
+                                <div class="mens"></div>
+                            <% } %>
+                        </div>
+                    </div>
+                    <div class="cont2_men">
+                        <div class="cont2_men_main">
+                            <img src="/img/collection/coll_man11.png">
+                        </div>
+                        <div class="cont2_men_sub">
+                            <% for (let i=0; i < 3; i++) { %>
+                                <div class="mens"></div>
+                            <% } %>
+                        </div>
+                    </div>
+                    <div class="cont2_men">
+                        <div class="cont2_men_main">
+                            <img src="/img/collection/coll_man14.png">
+                        </div>
+                        <div class="cont2_men_sub">
+                            <% for (let i=0; i < 3; i++) { %>
+                                <div class="mens"></div>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont2_btns_woman on">
+                <a class="on" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+            </div>
+            <div class="cont2_btns_men">
+                <a class="on" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+            </div>
+        </div>
+    </div>
+    <%- include("footer.ejs",{sub:""}) %>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/js/collection.js"></script>
+</body>
+</html>

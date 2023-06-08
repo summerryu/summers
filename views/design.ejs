@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGGNABI - Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Song+Myung&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/set.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="stylesheet" href="/css/header_design.css">
+</head>
+<body>
+    <%- include("header.ejs",{design:"design",designCss:"design.css"}) %>
+    <div id="container">
+        <div class="center">
+            <div class="cont1">
+                <div class="cont1_left">
+                    <div class="left_slide">
+                        <img class="on" src="/img/design_main.png">
+                        <img src="/img/design/img1-2.png">
+                    </div>
+                    <div class="left_btns">
+                        <div class="box on"><a href="#"></a></div>
+                        <div class="box"><a href="#"></a></div>
+                    </div>
+                </div>
+                <div class="cont1_right">
+                    <img src="/img/design_main3.png">
+                    <img src="/img/design_main2.png">
+                </div>
+            </div>
+            <div class="cont2_main_text">
+                <h1>NEW ARRIVALS</h1>
+                <p>2023 복나비 한복의 새로운 design line 을 만나보세요</p>
+            </div>
+            <div class="cont2 change">
+                <% for (let i = 0; i < 5; i++) { %>
+                    <div class="cont2_box"></div>
+                <% } %>
+            </div>
+            <div class="cont2-2">
+                <% for (let i = 0; i < 5; i++) { %>
+                    <div class="cont2_2_box"></div>
+                <% } %>
+            </div>
+            <div class="cont2_change_btn">
+                <div class="cont_btns_num">
+                    <div class="cont_btns change">
+                        <a href="#">1</a>
+                    </div>
+                    <div class="cont_btns">
+                        <a href="#">2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include("footer.ejs",{sub:""}) %>
+    <script src="/js/design.js"></script>
+</body>
+</html>

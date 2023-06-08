@@ -1,0 +1,61 @@
+
+#header{
+    font-family: 'Libre Baskerville', serif;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    background-color: transparent;
+    transition: all 0.5s;
+    padding:10px 0;
+    .center{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .logo{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+            img{
+                width: 240px;
+                height: 40px;
+            }
+        }
+            .gnb{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                height: 30px;
+                align-items: center;
+                li{
+                    margin: 0 40px;
+                    position: relative;
+                    a{
+                        color:#fff;
+                        font-size: 11pt;
+                    }
+                }
+            }
+    }
+}
+#header.on{
+    background-color:#fff;
+    .center{
+            .gnb{
+                li{
+                    position: relative;
+                    a{
+                        color:#000;
+                    }
+                   
+                }
+        }
+    }
+}
+

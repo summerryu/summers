@@ -1,0 +1,146 @@
+#container .center {
+  margin-top: 100px;
+  margin-left: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#container .center > div {
+  height: 100vh;
+  width: 1300px;
+}
+#container .center .cont1 {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+#container .center .cont1 h1 {
+  font-size: 25pt;
+  margin-bottom: 30px;
+  color: #3a3a3a;
+}
+#container .center .cont1 p {
+  line-height: 35px;
+  color: #666666;
+  font-size: 11pt;
+}
+#container .center .cont1 .cont1_textbox {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#container .center .cont1 .right_imgbox {
+  margin-left: 50px;
+}
+#container .center .cont1 .right_imgbox img {
+  width: 300px;
+  height: 450px;
+}
+#container .center .cont1 .right_imgbox .img2 {
+  right: -30px;
+  position: relative;
+  bottom: -150px;
+}
+#container .center .cont2 {
+  position: relative;
+  margin-left: 300px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+}
+#container .center .cont2::before {
+  height: 100%;
+  width: 1px;
+  content: "";
+  display: block;
+  background-color: rgb(224, 224, 224);
+  left: 40%;
+  position: absolute;
+}
+#container .center .cont2 .cont2_textbox_left .contact {
+  margin-bottom: 50px;
+}
+#container .center .cont2 .cont2_textbox_left .contact p {
+  line-height: 35px;
+  color: #666666;
+  font-size: 11pt;
+}
+#container .center .cont2 .cont2_textbox_left h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 25pt;
+  margin-bottom: 30px;
+  color: #3a3a3a;
+}
+#container .center .cont2 .cont2_textbox_left .shop {
+  font-family: "Libre Baskerville", serif;
+}
+#container .center .cont2 .cont2_textbox_left .shop h2 {
+  margin: 20px 0;
+  position: relative;
+}
+#container .center .cont2 .cont2_textbox_left .shop h2::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 10%;
+  height: 1px;
+  display: block;
+  background-color: #666666;
+}
+#container .center .cont2 .cont2_textbox_left .shop p {
+  line-height: 35px;
+  color: #666666;
+  font-size: 11pt;
+}
+#container .center .cont2 .cont2_textbox_left .list {
+  margin-top: 30px;
+}
+#container .center .cont2 .cont2_textbox_left .list h4 {
+  margin: 20px 0;
+  position: relative;
+}
+#container .center .cont2 .cont2_textbox_left .list h4::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 10%;
+  height: 1px;
+  display: block;
+  background-color: #666666;
+}
+#container .center .cont2 .cont2_textbox_left .list p {
+  line-height: 35px;
+  color: #666666;
+  font-size: 11pt;
+}
+#container .center .cont2 .cont2_textbox_left .list p a {
+  color: rgb(103, 152, 224);
+}
+#container .center .cont2 .cont2_textbox_left .list p a:hover {
+  font-weight: 600;
+}
+#container .center .cont2 .cont2_textbox_right {
+  width: 604px;
+}
+#container .center .cont2 .cont2_textbox_right h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 25pt;
+  margin-bottom: 30px;
+  color: #3a3a3a;
+}
+#container .center .cont2 .cont2_textbox_right p {
+  line-height: 35px;
+  color: #666666;
+  font-size: 11pt;
+}
+#container .center .cont2 .cont2_textbox_right .textbox {
+  margin-top: 30px;
+}
+#container .center .cont2 .cont2_textbox_right .textbox h2 {
+  margin: 10px 0;
+}
+#container .center .cont2 .cont2_textbox_right .textbox2 h2 {
+  margin: 10px 0;
+}

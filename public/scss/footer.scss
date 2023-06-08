@@ -1,0 +1,60 @@
+
+#footer{
+    margin-top: 250px;
+    .center{
+        border-top: 1px solid #dddddd;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding:30px;
+        .fot_gnb{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            li{
+                margin: 20px;
+                a{
+                    color:#353535;
+                    font-weight: 500;
+                }
+            }
+        }
+        p{
+            font-size: 10pt;
+            line-height: 20px;
+            color:#6d6d6d;
+        }
+    }
+}
+
+#footer.about{
+    .center{
+        border-top: 1px solid #dddddd;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding:30px;
+        background-color: rgba(0, 0, 0, 0.9);
+        .fot_gnb{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            li{
+                margin: 20px;
+                a{
+                    color:#d6d6d6;
+                    font-weight: 500;
+                }
+            }
+        }
+        p{
+            font-size: 10pt;
+            line-height: 20px;
+            color:#d6d6d6;
+        }
+    }
+}

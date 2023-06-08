@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예약 작성</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Song+Myung&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/set.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="/css/header_design.css">
+    <link rel="stylesheet" href="/css/brd_insert.css">
+</head>
+<body>
+    <%- include("header.ejs",{design:"design"}) %>
+    <div id="container">
+        <div class="center">
+            <h2>방문예약 하기</h2>
+            <div class="board_box">
+                <form action="dbinsert" method="post">
+                    <span>제목</span><input class="title" type="text" name="title" placeholder="제목을 입력해주세요"><br/>
+                    <span>이름</span><input class="name" type="text" name="username" placeholder="예약자 성명을 입력해주세요">
+                    <p>내용</p><textarea name="text" placeholder="상담 내용을 입력해주세요"></textarea>
+                    <button type="submit">완료</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <%- include("footer.ejs",{sub:""}) %>
+</body>
+</html>

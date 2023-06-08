@@ -1,0 +1,61 @@
+
+#container{
+    .center{
+        display: flex;
+        justify-content: center;
+        padding-top: 200px;
+        align-items: center;
+        flex-wrap: wrap;
+        .main_title{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        > div {
+            width: 1300px;
+        }
+        .board{
+            display: flex;
+            align-items: center;
+            width: 700px;
+            height: 500px;
+            background-color: blanchedalmond;
+            .box{
+                margin: 20px;
+                .brd_list{
+                    width: 650px;
+                }
+                p{
+                    width: 200px;
+                    height: 30px;
+                    background-color: #fff;
+                }
+                .brd_text{
+                    width: 650px;
+                    height: 350px;
+                    background-color: #fff;
+                }
+            }
+        }
+        .brd_btn{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            button{
+                margin-right: 15px;
+                border: 1px solid #979797;
+                background-color: #fff;
+                border-radius: 5px;
+            }
+            .update{
+                width: 50px;
+                height: 30px;
+                padding:5px;
+            }
+            .back{
+                width:70px;
+                
+            }
+        }
+    }
+}

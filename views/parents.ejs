@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parents</title>
+    <!-- 폰트연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Song+Myung&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/parents.css">
+    <link rel="stylesheet" href="/css/set.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header_design.css">
+</head>
+<body>
+    <%- include("header.ejs",{design:"design"}) %>
+    <div id="container">
+        <div class="center">
+            <div class="bg"></div>
+            <div class="cont2">
+                <div class="cont2_maintext">
+                    <h1>
+                        Parents Line
+                    </h1>
+                    <p>
+                        복나비 한복의 혼주라인을 만나보세요.
+                    </p>
+                </div>
+            </div>
+            <div class="cont2_list">
+                <% for (let i = 0; i < 6; i++) { %>
+                    <div class="cont2_box"></div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <%- include("footer.ejs",{sub:""}) %>
+    <script src="/js/parents.js"></script>
+</body>
+</html>

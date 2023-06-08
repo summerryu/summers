@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방문예약</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Song+Myung&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/set.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="/css/header_design.css">
+    <link rel="stylesheet" href="/css/board_list.css">
+</head>
+<body>
+    <!-- 목록페이지 -->
+    <%- include("header.ejs",{design:"design"}) %>
+    <div id="container">
+        <div class="center">
+            <h2  style="font-family: 'Noto Sans KR', sans-serif">방문예약</h2>
+            <p>방문 상담은 100% 사전 예약제로 운영합니다.</p>
+            <div class="brd_btns">
+                <a href="/brdinsert">글쓰기</a>
+            </div>
+            <div class="brds">
+                <table class="tb1">
+                    <tr class="tbTop">
+                      <td class="none"></td>
+                      <td class="title">제목</td>
+                      <td class="user">작성자</td>
+                      <td class="none"></td>
+                    </tr>
+                    <% for(let i=0; i<data.length; i++){ %>
+                      <tr class="brd_list">
+                          <td class="brd_number"><%- data[i].num %></td>
+                          <td class="brd_title"><a href="/brddetail/<%- data[i].num %>"><%- data[i].title %></a></td>
+                          <td class="brd_name"><%- data[i].username %></td>
+                          <td class="brd_update"><a href="/brdupdate/<%- data[i].num %>">수정</a></td>
+                      </tr>
+                    <% } %>
+                  </table>
+            </div>
+            
+        </div>
+    </div>    
+    <%- include("footer.ejs",{sub:""}) %>
+</body>
+</html>

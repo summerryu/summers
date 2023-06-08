@@ -1,0 +1,74 @@
+#container .center {
+  margin-top: 100px;
+  margin-left: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 500px;
+}
+#container .center h2 {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+#container .center .board_box {
+  border: 1px solid rgb(180, 180, 180);
+  background-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  height: 550px;
+  padding: 20px;
+}
+#container .center .board_box span {
+  font-size: 10pt;
+  margin-right: 15px;
+}
+#container .center .board_box p {
+  font-size: 10pt;
+  margin-bottom: 15px;
+}
+#container .center .board_box input {
+  border: none;
+  position: relative;
+}
+#container .center .board_box .title {
+  width: 400px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+#container .center .board_box .title::-moz-placeholder {
+  padding-left: 10px;
+}
+#container .center .board_box .title::placeholder {
+  padding-left: 10px;
+}
+#container .center .board_box .name {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+#container .center .board_box .name::-moz-placeholder {
+  padding-left: 10px;
+}
+#container .center .board_box .name::placeholder {
+  padding-left: 10px;
+}
+#container .center .board_box textarea {
+  width: 700px;
+  height: 350px;
+  border: none;
+  margin-bottom: 20px;
+}
+#container .center .board_box textarea::-moz-placeholder {
+  padding: 10px;
+}
+#container .center .board_box textarea::placeholder {
+  padding: 10px;
+}
+#container .center .board_box button {
+  border: none;
+  width: 50px;
+  height: 30px;
+}

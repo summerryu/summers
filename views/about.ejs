@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Song+Myung&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="css/header_design.css">
+    <link rel="stylesheet" href="css/set.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+</head>
+<body>
+    <%- include("header.ejs",{design:"design"}) %>
+    <div id="container">
+        <div class="cont_gnb">
+            <ul class="menu">
+                <li class="on"><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="center">
+            <div class="conts1 on">
+                <div class="conts1_left">
+                    <div class="left_textbox">
+                        <h1 style="font-family: 'Libre Baskerville', serif">BOGG NABI - about</h1>
+                        <p>
+                            따듯함, 그리고 아름다움을 담습니다.
+                        </p>
+                        <p>
+                            한복의 동적인 아름다움과 정적인 우아함의 중심에서
+                        </p>
+                        <p>
+                            전통과 세련됨을 잃지 않도록 노력하고 있습니다.
+                        </p>
+                        <p>
+                            한국복식을 전공한 복나비 소성희 디자이너가
+                        </p>
+                        <p>
+                            직접 배색하고 디자인하여 짓는
+                        </p>
+                        <p>
+                            우리옷, 디자이너 한복브랜드 입니다.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="conts1_right">
+                    <img class="imgtwo" src="../img/collection/coll11.png">
+                </div>
+            </div>
+            <div class="conts2">
+                <h1 class="title">CONTACT</h1>
+                <div class="box1">
+                    <h1>Contact</h1>
+                    <ul class="contact">
+                        <li>방문 상담은 100% 사전 예약제로 운영합니다.</li>
+                        <li>문의하시는 시점의 당월과 익월스케줄까지 예약받고 있습니다.</li>
+                        <li>방문예약금 및 피팅비가 있습니다.</li>
+                    </ul>
+                </div>
+                <div class="shop">
+                    <h2>Shop</h2>
+                    <div class="textbox">
+                        <p>OPEN WED - FRI am 11:00 CLOSE pm 7:00</p>
+                        <p>     SAT - SUN am 11:00 CLOSE pm 5:00</p>
+                    </div>
+                </div>
+                <div class="box3">
+                    <h4>방문 및 피팅 예약문의</h4>
+                    <div class="textbox">
+                        <h3>카카오톡 채널 복나비</h3>
+                        <h3>채팅상담 am 9:00 - pm 10:00</h3>
+                        <h3>전화상담 070-8200-5422</h3>
+                        <h3><a href="/brdlist">방문예약하기</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="conts3">
+                <div class="info">
+                    <div class="info_left">
+                        <img src="/img/cont3/img6.png">
+                    </div>
+                    <div class="info_right">
+                        <h1>Info</h1>
+                        <p>복나비 소성희한복은 전통을 기반으로현대적인 감각과 배색을 표현하는 명품디자이너 한복 브랜드입니다.</p>
+                        <div class="conts3_one">
+                            <h2>주소</h2>
+                            <p>
+                                서울시 강남구 청담동 55-16번지 3층 복나비 한복 [ 도산대로 100길 27 ]
+                            </p>
+                            <p>
+                                F3,27 Dosan - daero 100-gil, Gangnam-gu, Seoul, Republic of Korea (06071)
+                            </p>
+                        </div>
+                        <div class="conts3_two">
+                            <h2>대표</h2>
+                            <p>소성희</p>
+                        </div>
+                        <div class="conts3_three">
+                            <h2>Phone</h2>
+                            <p>070-8200-5422</p>
+                        </div>
+                        <div class="conts3_four">
+                            <h2>E-mail</h2>
+                            <p>boggnabi@naver.com</p>
+                        </div>
+                        <div class="conts3_five">
+                            <h2>Insta</h2>
+                            <p>@boggnabi -> main insta</p>
+                            <p>@boggnabi_class</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg about">
+        <img src="/img/top_slide3.png">
+    </div>
+    <div class="bg">
+        <img src="/img/top_slide2.jpg">
+    </div>
+    <div class="bg">
+        <img src="/img/top_slide5.png">
+    </div>
+    <%- include("footer.ejs",{sub:""}) %>
+    <script src="/js/about.js"></script>
+</body>
+</html>

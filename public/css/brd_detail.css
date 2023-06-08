@@ -1,0 +1,57 @@
+#container .center {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#container .center .main_title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#container .center > div {
+  width: 1300px;
+}
+#container .center .board {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: 500px;
+  background-color: blanchedalmond;
+}
+#container .center .board .box {
+  margin: 20px;
+}
+#container .center .board .box .brd_list {
+  width: 650px;
+}
+#container .center .board .box p {
+  width: 200px;
+  height: 30px;
+  background-color: #fff;
+}
+#container .center .board .box .brd_text {
+  width: 650px;
+  height: 350px;
+  background-color: #fff;
+}
+#container .center .brd_btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#container .center .brd_btn button {
+  margin-right: 15px;
+  border: 1px solid #979797;
+  background-color: #fff;
+  border-radius: 5px;
+}
+#container .center .brd_btn .update {
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+}
+#container .center .brd_btn .back {
+  width: 70px;
+}

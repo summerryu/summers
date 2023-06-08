@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <!-- 폰트연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Song+Myung&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/set.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header_design.css">
+    <link rel="stylesheet" href="/css/tradition.css">
+</head>
+<body>
+    <%- include("header.ejs",{design:"design"}) %>
+    <div id="container">
+        <div class="center">
+            <div class="bg"></div>
+            <div class="cont1">
+                <div class="cont1_maintext">
+                    <h1>
+                        Tradition Line
+                    </h1>
+                    <p>
+                        복나비한복의 전통한복 라인을 만나보세요
+                    </p>
+                </div>
+            </div>
+            <div class="cont2">
+                <% for (let i = 0; i < 3; i++) { %>
+                    <div class="cont2_box"></div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <%- include("footer.ejs",{sub:""}) %>
+    <script src="/js/tradition.js"></script>
+</body>
+</html>
