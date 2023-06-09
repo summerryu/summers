@@ -1,27 +1,106 @@
 #container .center {
   display: flex;
   justify-content: center;
-  padding-top: 200px;
+  padding-top: 100px;
   align-items: center;
   flex-wrap: wrap;
 }
 #container .center .main_title {
-  display: flex;
-  justify-content: center;
   width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 15pt;
 }
 #container .center > div {
   width: 1300px;
 }
 #container .center .board {
+  line-height: 20px;
+  border: 1px solid rgb(180, 180, 180);
+  background-color: #fff;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   width: 700px;
-  height: 500px;
-  background-color: blanchedalmond;
+  height: 560px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
-#container .center .board .box {
-  margin: 20px;
+#container .center .board .btns {
+  display: flex;
+  justify-content: center;
+}
+#container .center .board .btns button {
+  border: none;
+  width: 150px;
+  position: relative;
+  height: 40px;
+  background-color: #f88c00;
+  color: #fff !important;
+  font-size: 15pt;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-left: 10px;
+}
+#container .center .board .btns button a {
+  color: #fff;
+}
+#container .center .board .btns button::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: url("/img/btn_before.png") no-repeat;
+}
+#container .center .board .btns button::after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  background: url("/img/btn_after.png") no-repeat;
+}
+#container .center .board .btns .close {
+  width: 150px;
+  position: relative;
+  height: 40px;
+  color: #fff !important;
+  font-size: 15pt;
+  font-weight: 500;
+  line-height: 40px;
+  display: inline-block;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-left: 10px;
+  text-align: center;
+  background-color: #9c9c9c;
+}
+#container .center .board .btns .close a {
+  color: #fff;
+}
+#container .center .board .btns .close::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: url("/img/btn_before.png") no-repeat;
+}
+#container .center .board .btns .close::after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  background: url("/img/btn_after.png") no-repeat;
 }
 #container .center .board .box .brd_list {
   width: 650px;
@@ -29,29 +108,16 @@
 #container .center .board .box p {
   width: 200px;
   height: 30px;
-  background-color: #fff;
+  border: 1px solid rgb(216, 216, 216);
+  background-color: rgb(250, 250, 250);
 }
 #container .center .board .box .brd_text {
-  width: 650px;
+  border: 1px solid rgb(216, 216, 216);
+  background-color: rgb(250, 250, 250);
   height: 350px;
-  background-color: #fff;
+  margin-bottom: 20px;
 }
-#container .center .brd_btn {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-#container .center .brd_btn button {
-  margin-right: 15px;
-  border: 1px solid #979797;
-  background-color: #fff;
-  border-radius: 5px;
-}
-#container .center .brd_btn .update {
-  width: 50px;
-  height: 30px;
-  padding: 5px;
-}
-#container .center .brd_btn .back {
-  width: 70px;
+#container .center .board span {
+  font-size: 11pt;
+  color: #616161;
 }

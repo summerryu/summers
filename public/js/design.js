@@ -151,7 +151,8 @@ const cont2listbox2 = document.querySelector(".cont2-2");
 let cont2List = [cont2listbox,cont2listbox2];
 
 for(let i=0; i<cont2Btns.length; i++){
-    cont2Btns[i].onclick = function(){
+    cont2Btns[i].onclick = function(event){
+        event.preventDefault();
         for(let j=0; j<cont2Btns.length; j++){
             cont2Btns[j].classList.remove("change");
             cont2List[j].classList.remove("change");
@@ -160,3 +161,31 @@ for(let i=0; i<cont2Btns.length; i++){
         cont2List[i].classList.add("change");
     }
 }
+
+
+const imgboxs = document.querySelectorAll(".imgbox");
+const bigimg = document.querySelector(".cont2_big");
+
+
+
+console.log(bigimg);
+
+
+for(let i=0; i<imgboxs.length; i++){
+    imgboxs[i].onclick = function(){
+        bigimg.classList.add("on");
+    }
+}
+const closeBtn = document.querySelector(".close_btn");
+closeBtn.onclick = function(event){
+    event.preventDefault();
+    bigimg.classList.remove("on");
+}
+
+// imgbox 클릭시 img 교체
+$(function(){
+    $(".imgbox").on("click", function(){
+        const src = $(this).find("img").attr("src");
+        $(".cont2_big img").attr("src", src);
+    });
+});

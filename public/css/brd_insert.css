@@ -5,20 +5,20 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 500px;
 }
 #container .center h2 {
   width: 100%;
   text-align: center;
   padding: 20px;
+  font-size: 15pt;
 }
 #container .center .board_box {
   border: 1px solid rgb(180, 180, 180);
-  background-color: antiquewhite;
+  background-color: #fff;
   display: flex;
   flex-wrap: wrap;
   width: 700px;
-  height: 550px;
+  height: 560px;
   padding: 20px;
 }
 #container .center .board_box span {
@@ -30,7 +30,8 @@
   margin-bottom: 15px;
 }
 #container .center .board_box input {
-  border: none;
+  border: 1px solid rgb(216, 216, 216);
+  background-color: rgb(250, 250, 250);
   position: relative;
 }
 #container .center .board_box .title {
@@ -56,9 +57,10 @@
   padding-left: 10px;
 }
 #container .center .board_box textarea {
+  border: 1px solid rgb(216, 216, 216);
+  background-color: rgb(250, 250, 250);
   width: 700px;
   height: 350px;
-  border: none;
   margin-bottom: 20px;
 }
 #container .center .board_box textarea::-moz-placeholder {
@@ -67,8 +69,79 @@
 #container .center .board_box textarea::placeholder {
   padding: 10px;
 }
-#container .center .board_box button {
+#container .center .board_box .btns {
+  display: flex;
+  justify-content: center;
+}
+#container .center .board_box .btns button {
   border: none;
-  width: 50px;
-  height: 30px;
+  width: 150px;
+  position: relative;
+  height: 40px;
+  background-color: #f88c00;
+  color: #fff !important;
+  font-size: 15pt;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-left: 10px;
+}
+#container .center .board_box .btns button a {
+  color: #fff;
+}
+#container .center .board_box .btns button::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: url("/img/btn_before.png") no-repeat;
+}
+#container .center .board_box .btns button::after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  background: url("/img/btn_after.png") no-repeat;
+}
+#container .center .board_box .btns .close {
+  width: 150px;
+  position: relative;
+  height: 40px;
+  color: #fff !important;
+  font-size: 15pt;
+  font-weight: 500;
+  line-height: 40px;
+  display: inline-block;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-left: 10px;
+  text-align: center;
+  background-color: #9c9c9c;
+}
+#container .center .board_box .btns .close a {
+  color: #fff;
+}
+#container .center .board_box .btns .close::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: url("/img/btn_before.png") no-repeat;
+}
+#container .center .board_box .btns .close::after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  background: url("/img/btn_after.png") no-repeat;
 }

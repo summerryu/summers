@@ -74,8 +74,8 @@
                     color:#3a3a3a;
                 }
                 .shop{
-                    font-family: 'Libre Baskerville', serif;
                     h2{
+                        font-family: 'Libre Baskerville', serif;
                         margin: 20px 0;
                         position: relative;
                         &::before{
@@ -124,6 +124,7 @@
             }
             .cont2_textbox_right{
                 width: 604px;
+                height: 570px;
                 h1{
                     font-family: 'Libre Baskerville', serif;
                     font-size: 25pt;

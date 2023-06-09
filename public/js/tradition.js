@@ -42,3 +42,27 @@ function itemCreate(products) {
 }
 
 itemCreate(products)
+
+
+const imgboxs = document.querySelectorAll(".imgbox");
+const bigimg = document.querySelector(".cont2_big");
+
+
+for(let i=0; i<imgboxs.length; i++){
+    imgboxs[i].onclick = function(){
+        bigimg.classList.add("on");
+    }
+}
+const closeBtn = document.querySelector(".close_btn");
+closeBtn.onclick = function(event){
+    event.preventDefault();
+    bigimg.classList.remove("on");
+}
+
+
+$(function(){
+    $(".imgbox").on("click", function(){
+        const src = $(this).find("img").attr("src");
+        $(".cont2_big img").attr("src", src);
+    });
+});

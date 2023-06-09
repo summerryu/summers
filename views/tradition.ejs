@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Song+Myung&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="/css/set.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/header_design.css">
@@ -36,9 +39,18 @@
                     <div class="cont2_box"></div>
                 <% } %>
             </div>
+            <div class="cont2_big">
+                <div class="open_img"><img src=""></div>
+                <div class="close_btn">
+                    <a href="#">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <%- include("footer.ejs",{sub:""}) %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/js/tradition.js"></script>
 </body>
 </html>

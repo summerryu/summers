@@ -29,10 +29,12 @@
                   <span>예약자명:</span><p><%- data.username %></p>
                   <span>상담내역:</span><div class="brd_text"><%- data.text %></div>
                 </div>
-            </div>
-            <div class="brd_btn">
-                <button class="update" type="submit"><a href="/brdupdate/<%- data.num %>">수정</a></button>
-                <button class="back" type="submit"><a href="/brdlist">뒤로가기</a></button>
+                <div class="btns">
+                    <button type="submit"><a href="/brdupdate/<%- data.num %>">수정</a></button>
+                    <div class="close">
+                        <a href="/brdlist">뒤로가기</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

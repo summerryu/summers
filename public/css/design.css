@@ -1,5 +1,7 @@
+#container {
+  height: 100%;
+}
 #container .center {
-  margin-top: 100px;
   margin-left: 0px;
   display: flex;
   justify-content: center;
@@ -9,6 +11,7 @@
   width: 1300px;
 }
 #container .center .cont1 {
+  margin-top: 100px;
   width: 1300px;
   height: 600px;
   display: flex;
@@ -156,6 +159,43 @@
 }
 #container .center .cont2-3 .cont2_3_box .imgbox img:hover {
   transform: scale(1.1);
+}
+#container .center .cont2_big {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  display: none;
+  justify-content: center;
+  z-index: 95;
+  align-items: center;
+}
+#container .center .cont2_big .open_img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 700px;
+}
+#container .center .cont2_big .open_img img {
+  width: 100%;
+  height: 100%;
+}
+#container .center .cont2_big .close_btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -340px;
+  right: -10px;
+}
+#container .center .cont2_big .close_btn a {
+  right: 0px;
+  font-size: 30px;
+  color: #000;
+  font-weight: normal;
+}
+#container .center .cont2_big.on {
+  display: flex;
 }
 #container .center .cont2-3.change {
   display: flex;

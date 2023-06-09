@@ -38,12 +38,10 @@
                           <td class="brd_number"><%- data[i].num %></td>
                           <td class="brd_title"><a href="/brddetail/<%- data[i].num %>"><%- data[i].title %></a></td>
                           <td class="brd_name"><%- data[i].username %></td>
-                          <td class="brd_update"><a href="/brdupdate/<%- data[i].num %>">수정</a></td>
                       </tr>
                     <% } %>
                   </table>
             </div>
-            
         </div>
     </div>    
     <%- include("footer.ejs",{sub:""}) %>

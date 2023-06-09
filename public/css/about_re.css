@@ -73,10 +73,8 @@
   margin-bottom: 30px;
   color: #3a3a3a;
 }
-#container .center .cont2 .cont2_textbox_left .shop {
-  font-family: "Libre Baskerville", serif;
-}
 #container .center .cont2 .cont2_textbox_left .shop h2 {
+  font-family: "Libre Baskerville", serif;
   margin: 20px 0;
   position: relative;
 }
@@ -123,6 +121,7 @@
 }
 #container .center .cont2 .cont2_textbox_right {
   width: 604px;
+  height: 570px;
 }
 #container .center .cont2 .cont2_textbox_right h1 {
   font-family: "Libre Baskerville", serif;
