@@ -17,6 +17,20 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        .sub_gnb_on{
+            display: none;
+            top:0;
+            right:0;
+            a{
+              i{
+                font-size: 30px;
+                color:#fff;
+                position: absolute;
+                right: 35px;
+                top:50px;
+              }
+            }
+          }
         .logo{
             display: flex;
             justify-content: center;
@@ -27,7 +41,7 @@
                 height: 40px;
             }
         }
-            .gnb{
+        .gnb{
                 width: 100%;
                 display: flex;
                 justify-content: center;
@@ -41,7 +55,7 @@
                         font-size: 11pt;
                     }
                 }
-            }
+        }
     }
 }
 #header.on{
@@ -55,6 +69,69 @@
                     }
                    
                 }
+        }
+    }
+}
+#header.close{
+    display: none;
+}
+@media screen and (max-width:1024px) {
+    #header{
+        font-family: 'Libre Baskerville', serif;
+        z-index: 99;
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        align-items: center;
+        background-color: transparent;
+        transition: all 0.5s;
+        padding:10px 0;
+        .center{
+            .sub_gnb_on{
+                display: flex;
+                top:0;
+                right:0;
+                a{
+                  i{
+                    font-size: 20px;
+                    color:#fff;
+                    position: absolute;
+                    left: 35px;
+                    top:20px;
+                  }
+                }
+              }
+            .logo{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 20px;
+                img{
+                    width: 100%;
+                    height:20px;
+                }
+            }
+            .gnb{
+                display: none;
+            }
+        }
+    }
+    #header.on{
+        background-color:#fff;
+        .center{
+            .sub_gnb_on{
+                display: flex;
+                top:0;
+                right:0;
+                a{
+                  i{
+                    font-size: 20px;
+                    color:#000;
+                  }
+                }
+              }
         }
     }
 }

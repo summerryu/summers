@@ -1,0 +1,20 @@
+    <link rel="stylesheet" href="/css/header_design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <div id="header_design">
+        <div class="center">
+            <div class="sub_gnb_on">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <div class="logo">
+                <h1><a href="/"><img class="logoimg" src="/img/logo1.png"></a></h1>
+            </div>
+            <ul class="gnb">
+                <li class="<%- (menuOn === "design") ? "on" : "" %>"><a href="/design">Design line</a></li>
+                <li class="<%- (menuOn === "collection") ? "on" : "" %>"><a href="/collection">Collection line</a></li>
+                <li class="<%- (menuOn === "parents") ? "on" : "" %>"><a href="/parents">Parents line</a></li>
+                <li class="<%- (menuOn === "tradition") ? "on" : "" %>"><a href="/tradition">Tradition line</a></li>
+                <li class="<%- (menuOn === "about") ? "on" : "" %>"><a href="/about">ABOUT</a></li>
+                <li class="<%- (menuOn === "brdlist") ? "on" : "" %>"><a href="/brdlist" style="font-family: 'Noto Sans KR', sans-serif">방문예약</a></li>
+            </ul>
+        </div>
+    </div>

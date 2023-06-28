@@ -126,3 +126,100 @@
         }
     }
 }
+
+
+@media screen and (max-width:1024px) {
+    #container{
+        margin-top: 130px;
+        .center{
+           
+            .main_title{
+                width: 100%;
+                text-align: center;
+                padding:20px;
+                font-size: 15pt;
+            }
+            > div {
+                width: 100%;;
+            }
+            .board{
+                height: 580px;
+                line-height: 20px;
+                border: 1px solid rgb(180, 180, 180);
+                background-color: #fff;
+                display: flex;
+                flex-wrap: wrap;
+                width: 70%;
+                padding:0;
+                justify-content: center;
+                align-items: center;
+                .btns{
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    top:-20px;
+                }
+                .box{
+                    width: 80%;
+                    .brd_list{
+                        width: 100%;
+                    }
+                    p{
+                        width: 30%;
+                    }
+                }
+                span{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #container{
+        margin-top: 130px;
+        .center{
+           
+            .main_title{
+                width: 100%;
+                text-align: center;
+                padding:20px;
+                font-size: 15pt;
+            }
+            > div {
+                width: 100%;;
+            }
+            .board{
+                height: 580px;
+                line-height: 20px;
+                border: 1px solid rgb(180, 180, 180);
+                background-color: #fff;
+                display: flex;
+                flex-wrap: wrap;
+                width: 70%;
+                padding:0;
+                justify-content: center;
+                align-items: center;
+                .btns{
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    top:-20px;
+                }
+                .box{
+                    width: 80%;
+                    .brd_list{
+                        width: 100%;
+                    }
+                    p{
+                        width: 30%;
+                    }
+                }
+                span{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

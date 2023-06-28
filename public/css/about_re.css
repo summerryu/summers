@@ -143,3 +143,118 @@
 #container .center .cont2 .cont2_textbox_right .textbox2 h2 {
   margin: 10px 0;
 }
+
+@media screen and (max-width: 1024px) {
+  #container {
+    margin-top: 150px;
+  }
+  #container .center {
+    width: 100%;
+  }
+  #container .center > div {
+    height: 100vh;
+    width: 100%;
+  }
+  #container .center .cont1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #container .center .cont1 h1 {
+    font-size: 23px;
+    margin-bottom: 30px;
+    color: #3a3a3a;
+  }
+  #container .center .cont1 p {
+    line-height: 35px;
+    color: #666666;
+    font-size: 13px;
+  }
+  #container .center .cont1 .cont1_textbox {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #container .center .cont1 .right_imgbox {
+    margin-left: 0px;
+  }
+  #container .center .cont1 .right_imgbox img {
+    border-radius: 5px;
+    width: 300px;
+    height: 450px;
+  }
+  #container .center .cont1 .right_imgbox .img2 {
+    right: 0px;
+    position: relative;
+    bottom: 0px;
+  }
+  #container .center .cont2 {
+    padding-bottom: 500px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #container .center .cont2::before {
+    display: none;
+  }
+  #container .center .cont2 .cont2_textbox_left {
+    padding-bottom: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  #container .center .cont2 .cont2_textbox_left .contact {
+    margin-bottom: 50px;
+  }
+  #container .center .cont2 .cont2_textbox_left .contact p {
+    font-size: 13px;
+  }
+  #container .center .cont2 .cont2_textbox_left h1 {
+    font-size: 23px;
+  }
+  #container .center .cont2 .cont2_textbox_left .shop h2::before {
+    display: none;
+  }
+  #container .center .cont2 .cont2_textbox_left .shop p {
+    font-size: 13px;
+  }
+  #container .center .cont2 .cont2_textbox_left .list {
+    margin-top: 30px;
+  }
+  #container .center .cont2 .cont2_textbox_left .list h4::before {
+    display: none;
+  }
+  #container .center .cont2 .cont2_textbox_left .list p {
+    font-size: 13px;
+  }
+  #container .center .cont2 .cont2_textbox_right {
+    border-top: 1px solid rgb(224, 224, 224);
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  #container .center .cont2 .cont2_textbox_right h1 {
+    font-size: 23px;
+  }
+  #container .center .cont2 .cont2_textbox_right p {
+    line-height: 35px;
+    color: #666666;
+    font-size: 13px;
+  }
+  #container .center .cont2 .cont2_textbox_right .textbox {
+    margin-top: 30px;
+  }
+  #container .center .cont2 .cont2_textbox_right .textbox h2 {
+    margin: 10px 0;
+  }
+  #container .center .cont2 .cont2_textbox_right .textbox2 h2 {
+    margin: 10px 0;
+  }
+}

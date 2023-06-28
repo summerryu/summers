@@ -1,30 +1,96 @@
-#header.design {
+#header_design {
   background-color: #fff;
   z-index: 998;
   width: 300px;
-  position: fixed;
   height: 100%;
   left: 0;
+  position: fixed;
   padding-top: 50px;
   top: 0;
 }
-#header.design .center {
+#header_design .center {
   margin: 0 30px;
 }
-#header.design .center .logo .logoimg {
+#header_design .center .sub_gnb_on {
+  display: none;
+  top: 0;
+  right: 0;
+}
+#header_design .center .sub_gnb_on a i {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  right: 35px;
+  top: 50px;
+}
+#header_design .center .logo .logoimg {
   width: 200px;
 }
-#header.design .center .gnb {
+#header_design .center .gnb {
   margin-top: 50px;
 }
-#header.design .center .gnb li {
+#header_design .center .gnb li {
   margin: 10px 0;
 }
-#header.design .center .gnb li a {
+#header_design .center .gnb li a {
   color: #292929;
   font-size: 10pt;
   transition: all 0.5s;
 }
-#header.design .center .gnb li a:hover {
+#header_design .center .gnb li a:hover {
   color: rgba(65, 65, 65, 0.8);
+}
+#header_design .center .gnb li.on a {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  #header_design {
+    width: 100%;
+    height: 130px;
+  }
+  #header_design .center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 130px;
+  }
+  #header_design .center > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #header_design .center .gnb {
+    margin-top: 0;
+    display: flex;
+  }
+  #header_design .center .gnb li {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #header_design {
+    width: 100%;
+    height: 130px;
+  }
+  #header_design .center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 130px;
+  }
+  #header_design .center > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #header_design .center .gnb {
+    margin-top: 0;
+    display: flex;
+  }
+  #header_design .center .gnb li {
+    margin: 0 20px;
+  }
 }

@@ -59,8 +59,9 @@ const products = [
 ];
 
 function itemCreate(products) {
-    const productsList = document.getElementsByClassName("cont2_box");
 
+    const productsList = document.getElementsByClassName("cont2_box");
+    console.log(productsList)
     for (let i = 0; i < productsList.length; i++) {
         const title = document.createElement("h1");
 
@@ -168,16 +169,16 @@ const bigimg = document.querySelector(".cont2_big");
 
 
 
-console.log(bigimg);
-
-
 for(let i=0; i<imgboxs.length; i++){
     imgboxs[i].onclick = function(){
         bigimg.classList.add("on");
     }
 }
-const closeBtn = document.querySelector(".close_btn");
-closeBtn.onclick = function(event){
+
+
+const closeBtn2 = document.querySelector(".close_btn");
+console.log(closeBtn2)
+closeBtn2.onclick = function(event){
     event.preventDefault();
     bigimg.classList.remove("on");
 }

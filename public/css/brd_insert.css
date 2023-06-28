@@ -145,3 +145,78 @@
   height: 18px;
   background: url("/img/btn_after.png") no-repeat;
 }
+
+@media screen and (max-width: 1024px) {
+  #container {
+    margin-top: 200px;
+  }
+  #container .center .board_box {
+    border: 1px solid rgb(180, 180, 180);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+  }
+  #container .center .board_box form {
+    width: 100%;
+  }
+  #container .center .board_box form span {
+    font-size: 13px;
+  }
+  #container .center .board_box form p {
+    font-size: 10pt;
+    margin-bottom: 15px;
+  }
+  #container .center .board_box form input {
+    border: 1px solid rgb(216, 216, 216);
+    background-color: rgb(250, 250, 250);
+    position: relative;
+  }
+  #container .center .board_box form .title {
+    width: 80%;
+  }
+  #container .center .board_box form .name {
+    width: 40%;
+  }
+  #container .center .board_box form textarea {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container {
+    margin-top: 200px;
+  }
+  #container .center .board_box {
+    border: 1px solid rgb(180, 180, 180);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+  }
+  #container .center .board_box form {
+    width: 100%;
+  }
+  #container .center .board_box form span {
+    font-size: 13px;
+  }
+  #container .center .board_box form p {
+    font-size: 10pt;
+    margin-bottom: 15px;
+  }
+  #container .center .board_box form input {
+    border: 1px solid rgb(216, 216, 216);
+    background-color: rgb(250, 250, 250);
+    position: relative;
+  }
+  #container .center .board_box form .title {
+    width: 80%;
+  }
+  #container .center .board_box form .name {
+    width: 40%;
+  }
+  #container .center .board_box form textarea {
+    width: 100%;
+  }
+}

@@ -198,3 +198,330 @@
 #container .center .cont2_btns_men {
   display: none;
 }
+
+@media screen and (max-width: 1024px) {
+  #container .center {
+    margin-top: 130px;
+    width: 100%;
+  }
+  #container .center > div {
+    width: 100%;
+  }
+  #container .center .cont1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #container .center .cont1 .cont1_left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #container .center .cont1 .cont1_left img {
+    width: 60%;
+    height: 800px;
+  }
+  #container .center .cont1 .cont1_right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #container .center .cont1 .cont1_right img {
+    display: none;
+  }
+  #container .center .cont1 .cont1_right .right_text {
+    margin-top: 50px;
+    width: 50%;
+  }
+  #container .center .cont2_gender_btn {
+    display: flex;
+    justify-content: center;
+  }
+  #container .center .cont2_gender_btn .gender {
+    margin: 0 20px;
+  }
+  #container .center .cont2_gender_btn .gender a {
+    font-size: 10pt;
+    color: #666666;
+  }
+  #container .center .cont2_gender_btn .gender.on a {
+    color: #000;
+    font-weight: 600;
+  }
+  #container .center .cont2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    height: 800px;
+  }
+  #container .center .cont2 .womanmain.on {
+    display: block;
+  }
+  #container .center .cont2 .womanmain.on .cont2_woman {
+    display: none;
+  }
+  #container .center .cont2 .womanmain.on .cont2_woman.on {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #container .center .cont2 .womanmain.on .cont2_woman.on .cont2_woman_main {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    width: 100%;
+  }
+  #container .center .cont2 .womanmain.on .cont2_woman.on .cont2_woman_main img {
+    height: 700px;
+    width: 50%;
+  }
+  #container .center .cont2 .womanmain.on .cont2_woman.on .cont2_woman_sub {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  #container .center .cont2 .womanmain.on .cont2_woman.on .cont2_woman_sub .womans {
+    width: 200px;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  #container .center .cont2 .womanmain.on .cont2_woman.on .cont2_woman_sub .womans img {
+    width: 100%;
+  }
+  #container .center .cont2 .womanmain {
+    display: none;
+  }
+  #container .center .cont2 .menmain.on .cont2_men.on {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #container .center .cont2 .menmain.on .cont2_men.on .cont2_men_main {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #container .center .cont2 .menmain.on .cont2_men.on .cont2_men_main img {
+    width: 50%;
+    height: 700px;
+  }
+  #container .center .cont2 .menmain.on .cont2_men.on .cont2_men_sub {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+  }
+  #container .center .cont2 .menmain.on .cont2_men.on .cont2_men_sub .mens {
+    width: 200px;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  #container .center .cont2 .menmain.on .cont2_men.on .cont2_men_sub .mens img {
+    width: 100%;
+  }
+  #container .center .cont2 .menmain.on .cont2_men {
+    display: none;
+  }
+  #container .center .cont2 .menmain {
+    display: none;
+  }
+  #container .center .cont2_btns_woman.on {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  #container .center .cont2_btns_woman.on a {
+    color: #666666;
+    font-weight: 500;
+    font-size: 11pt;
+    margin: 0 20px;
+  }
+  #container .center .cont2_btns_woman {
+    display: none;
+  }
+  #container .center .cont2_btns_men.on {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  #container .center .cont2_btns_men.on a {
+    color: #666666;
+    font-weight: 500;
+    font-size: 11pt;
+    margin: 0 20px;
+  }
+  #container .center .cont2_btns_men.on a.on {
+    color: #000;
+  }
+  #container .center .cont2_btns_men {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container .center {
+    margin-top: 130px;
+    width: 100%;
+  }
+  #container .center > div {
+    width: 100%;
+  }
+  #container .center .cont1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #container .center .cont1 .cont1_left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #container .center .cont1 .cont1_left img {
+    width: 60%;
+    height: 800px;
+  }
+  #container .center .cont1 .cont1_right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #container .center .cont1 .cont1_right img {
+    display: none;
+  }
+  #container .center .cont1 .cont1_right .right_text {
+    margin-top: 50px;
+    width: 70%;
+  }
+  #container .center .cont2_gender_btn {
+    display: flex;
+    justify-content: center;
+  }
+  #container .center .cont2_gender_btn .gender {
+    margin: 0 20px;
+  }
+  #container .center .cont2_gender_btn .gender a {
+    font-size: 10pt;
+    color: #666666;
+  }
+  #container .center .cont2_gender_btn .gender.on a {
+    color: #000;
+    font-weight: 600;
+  }
+  #container .center .cont2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    height: 800px;
+  }
+  #container .center .cont2 .womanmain.on {
+    display: block;
+  }
+  #container .center .cont2 .womanmain.on .cont2_woman {
+    display: none;
+  }
+  #container .center .cont2 .womanmain.on .cont2_woman.on {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #container .center .cont2 .womanmain.on .cont2_woman.on .cont2_woman_main {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    width: 100%;
+  }
+  #container .center .cont2 .womanmain.on .cont2_woman.on .cont2_woman_main img {
+    height: 700px;
+    width: 50%;
+  }
+  #container .center .cont2 .womanmain.on .cont2_woman.on .cont2_woman_sub {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  #container .center .cont2 .womanmain.on .cont2_woman.on .cont2_woman_sub .womans {
+    width: 200px;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  #container .center .cont2 .womanmain.on .cont2_woman.on .cont2_woman_sub .womans img {
+    width: 100%;
+  }
+  #container .center .cont2 .womanmain {
+    display: none;
+  }
+  #container .center .cont2 .menmain.on .cont2_men.on {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #container .center .cont2 .menmain.on .cont2_men.on .cont2_men_main {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #container .center .cont2 .menmain.on .cont2_men.on .cont2_men_main img {
+    width: 50%;
+    height: 700px;
+  }
+  #container .center .cont2 .menmain.on .cont2_men.on .cont2_men_sub {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+  }
+  #container .center .cont2 .menmain.on .cont2_men.on .cont2_men_sub .mens {
+    width: 200px;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  #container .center .cont2 .menmain.on .cont2_men.on .cont2_men_sub .mens img {
+    width: 100%;
+  }
+  #container .center .cont2 .menmain.on .cont2_men {
+    display: none;
+  }
+  #container .center .cont2 .menmain {
+    display: none;
+  }
+  #container .center .cont2_btns_woman.on {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  #container .center .cont2_btns_woman.on a {
+    color: #666666;
+    font-weight: 500;
+    font-size: 11pt;
+    margin: 0 20px;
+  }
+  #container .center .cont2_btns_woman {
+    display: none;
+  }
+  #container .center .cont2_btns_men.on {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  #container .center .cont2_btns_men.on a {
+    color: #666666;
+    font-weight: 500;
+    font-size: 11pt;
+    margin: 0 20px;
+  }
+  #container .center .cont2_btns_men.on a.on {
+    color: #000;
+  }
+  #container .center .cont2_btns_men {
+    display: none;
+  }
+}

@@ -29,21 +29,23 @@ MongoClient.connect("mongodb+srv://saunogq:dudwndi7@cluster0.xaury3g.mongodb.net
     });
 });
 
+
+// 모바일 디자인 확인
+app.get("/m_header", (req,res)=>{
+    res.render("m_header.ejs");
+})
+
 // 게시판 라인
 
 app.get("/brdlist", (req,res)=>{
     db.collection("boggnanis").find().toArray((err,result)=>{
-        res.render("board_list.ejs",{data:result})
+        res.render("board_list.ejs",{data:result,menuOn:"brdlist"})
     });
 })
 
 
-app.get("/brdlist",(req,res)=>{
-    res.render("board_list.ejs");
-})
-
 app.get("/brdinsert", (req,res)=>{
-    res.render("board_insert.ejs")
+    res.render("board_insert.ejs",{menuOn:"brdlist"})
 })
 
 app.post("/dbinsert",(req,res)=>{
@@ -65,7 +67,7 @@ app.post("/dbinsert",(req,res)=>{
 
 app.get("/brdupdate/:num",(req,res)=>{
     db.collection("boggnanis").findOne({num:Number(req.params.num)},(err,result)=>{
-        res.render("board_update.ejs",{data:result})
+        res.render("board_update.ejs",{data:result,menuOn:"brdlist"})
     })
 })
 
@@ -86,7 +88,7 @@ app.post("/dbupdate",(req,res)=>{
 
   app.get("/brddetail/:num", (req, res) => {
     db.collection("boggnanis").findOne({ num: Number(req.params.num) }, (err, result) => {
-      res.render("board_detail.ejs", { data: result });
+      res.render("board_detail.ejs", { data: result ,menuOn:"brdlist"});
     });
   });
 ////////////////////////////////
@@ -101,26 +103,26 @@ app.get("/",(req,res)=>{
 
 
 app.get("/brddetail",(req,res)=>{
-    res.render("board_detail.ejs")
+    res.render("board_detail.ejs",{menuOn:"brdlist"})
 })
 
 
 app.get("/about",(req,res)=>{
-    res.render("about_re.ejs")
+    res.render("about_re.ejs",{menuOn:"about"})
 })
 
 app.get("/design",(req,res)=>{
-    res.render("design.ejs")
+    res.render("design.ejs",{menuOn:"design"})
 })
 
 app.get("/collection",(req,res)=>{
-    res.render("collection.ejs")
+    res.render("collection.ejs",{menuOn:"collection"})
 })
 
 app.get("/parents",(req,res)=>{
-    res.render("parents.ejs")
+    res.render("parents.ejs",{menuOn:"parents"})
 })
 
 app.get("/tradition",(req,res)=>{
-    res.render("tradition.ejs")
+    res.render("tradition.ejs",{menuOn:"tradition"})
 })

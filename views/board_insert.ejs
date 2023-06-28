@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/css/brd_insert.css">
 </head>
 <body>
-    <%- include("header.ejs",{design:"design"}) %>
+    <%- include("header_design.ejs") %>
     <div id="container">
         <div class="center">
             <h2>방문예약 하기</h2>
@@ -26,7 +26,7 @@
                     <span>이름</span><input class="name" type="text" name="username" placeholder="예약자 성명을 입력해주세요">
                     <p>내용</p><textarea name="text" placeholder="상담 내용을 입력해주세요"></textarea>
                     <div class="btns">
-                        <button type="submit"><a href="#">작성</a></button>
+                        <button type="submit">작성</button>
                         <div class="close"><a href="/brdlist">취소</a></div>
                     </div>
                 </form>

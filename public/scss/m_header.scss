@@ -1,0 +1,44 @@
+
+#m_header.on{
+    display: block;
+}
+#m_header{
+    padding-top: 100px;
+    display: none;
+    z-index: 99;
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    background-color: #fff;
+    border-right: 1px solid rgb(204, 204, 204);
+    .center{
+        display: flex;
+        flex-direction: column;
+        padding:20px;
+        position: relative;
+        .closeBtn{
+            position: absolute;
+            right: 20px;
+            top:20px;
+            i{
+                font-size: 20px;
+                color:#000;
+            }
+        }
+        .logo{
+            margin-bottom: 30px;
+            img{
+                height: 20px;
+            }
+        }
+        .gnb{
+            li{
+                margin-bottom: 25px;
+                a{
+                    color:#000;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

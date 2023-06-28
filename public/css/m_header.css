@@ -1,0 +1,42 @@
+#m_header.on {
+  display: block;
+}
+
+#m_header {
+  padding-top: 100px;
+  display: none;
+  z-index: 99;
+  position: fixed;
+  width: 30%;
+  height: 100vh;
+  background-color: #fff;
+  border-right: 1px solid rgb(204, 204, 204);
+}
+#m_header .center {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+}
+#m_header .center .closeBtn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+#m_header .center .closeBtn i {
+  font-size: 20px;
+  color: #000;
+}
+#m_header .center .logo {
+  margin-bottom: 30px;
+}
+#m_header .center .logo img {
+  height: 20px;
+}
+#m_header .center .gnb li {
+  margin-bottom: 25px;
+}
+#m_header .center .gnb li a {
+  color: #000;
+  font-size: 14px;
+}

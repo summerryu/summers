@@ -13,16 +13,16 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
     <link rel="stylesheet" href="css/set.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/jquery-sakura.css">
+    
 </head>
 <body>
-    
-    <%- include("header.ejs",{design:"",designCss:""})%>
+    <%- include("m_header.ejs") %>
+    <%- include("header.ejs")%>
     <div id="container">
         <div class="center">
             <div class="conts1">
@@ -148,8 +148,10 @@
                 <div class="conts4_center">
                     <div class="conts4_collection">
                         <div class="left_collection">
-                            <img src="img/collection/coll7.png">
-                            <h2><a href="/collection">NEW Collection hanbok</a></h2>
+                            <a href="/collection">
+                                <img src="img/collection/coll7.png">
+                                <h2 style="color:#fff">NEW Collection hanbok</h2>
+                            </a>
                         </div>
                         <div class="right_collection">
                             <img src="img/collection/coll2.png">
@@ -157,8 +159,10 @@
                     </div>
                     <div class="conts4_design">
                         <div class="left_design">
-                            <img src="img/design/img8.png">
-                            <h2><a href="/design">NEW Design hanbok</a></h2>
+                            <a href="/design">
+                                <img src="img/design/img8.png">
+                                <h2 style="color:#fff">NEW Design hanbok</h2>
+                            </a>
                         </div>
                         <div class="right_design">
                             <img src="img/design/img8-1.png">
@@ -166,8 +170,10 @@
                     </div>
                     <div class="conts4_parents">
                         <div class="left_parent">
-                            <img src="img/cont3/img4-1.png">
-                            <h2><a href="/parents">NEW Parent hanbok</a></h2>
+                            <a href="/parents">
+                                <img src="img/cont3/img4-1.png">
+                                <h2 style="color:#fff">NEW Parent hanbok</h2>
+                            </a>
                         </div>
                         <div class="right_parent">
                             <img src="img/cont3/img6-1.png">
